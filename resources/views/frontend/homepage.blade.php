@@ -48,17 +48,26 @@
                                     </thead> -->
                                     <tbody>
                                         <tr>
+                                            <td>Domain Name </td>
+                                            <td>: {{$arr['Domain Name']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Creation Date </td>
+                                            {{-- <td>: {{ \Carbon\Carbon::parse($arr['Creation Date'])->diff(Carbon\Carbon::now())->d }}</td> --}}
+                                            <td>: {{ \Carbon\Carbon::parse($arr['Creation Date'])->diff(\Carbon\Carbon::now())->format('%y years, %m months and %d days') }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Creation Date </td>
+                                            <td>: {{$arr['Creation Date']}}</td>
+                                        </tr>
+                                        {{-- <tr>
                                             <td>Register </td>
                                             <td>: PDR Ltd. d/b/a PublicDomainRegistry.com</td>
                                         </tr>
                                         <tr>
                                             <td>Register </td>
                                             <td>: PDR Ltd. d/b/a PublicDomainRegistry.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Register </td>
-                                            <td>: PDR Ltd. d/b/a PublicDomainRegistry.com</td>
-                                        </tr>
+                                        </tr> --}}
                                     </tbody>
                                 </table>
                             </div>
