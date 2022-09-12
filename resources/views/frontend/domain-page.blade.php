@@ -10,7 +10,7 @@
                     {{-- <span>The Best Free Online SEO Tools You Will Ever Need</span> --}}
                     <form action="" method="get">
                         <div class="input-group mb-3">
-                            <input type="text" name="domain" class="form-control form-control-md" placeholder="Enter your domain" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <input type="text" name="domain" @if($domain) value="{{$domain}}" @endif class="form-control form-control-md" placeholder="Enter your domain" aria-label="Recipient's username" aria-describedby="button-addon2">
                             <button class="btn btn-light" type="submir" id="button-addon2">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
@@ -28,9 +28,53 @@
         <div class="row">
             <div class="col-xl-9 col-lg-8 col-md-12">
                 <!-- tracking start -->
-
+                <div class="tracking-area mb-4">
+                    <div class="card tracking-card">
+                        <div class="card-header bg-light">
+                            <h5>
+                                <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                                Doman Age</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td>Domain Age </td>
+                                            <td>: <strong>{{$age}}</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- tracking end -->
-
+                <!-- tracking start -->
+                <div class="tracking-area">
+                    <div class="card tracking-card">
+                        <div class="card-header bg-light">
+                            <h5>
+                                <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                                Doman Information</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        @foreach ($arr as $key => $val)
+                                        <tr>
+                                            <td>{{$key}} </td>
+                                            <td>: {{$val}}</td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tracking end -->
 
 
 

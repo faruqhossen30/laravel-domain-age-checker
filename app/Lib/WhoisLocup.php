@@ -156,6 +156,7 @@ class WhoisLocup
     {
         $domain = trim($domain); //remove space from start and end of domain
         if (substr(strtolower($domain), 0, 7) == "http://") $domain = substr($domain, 7); // remove http:// if included
+        if (substr(strtolower($domain), 0, 8) == "https://") $domain = substr($domain, 8); // remove https:// if included
         if (substr(strtolower($domain), 0, 4) == "www.") $domain = substr($domain, 4); //remove www from domain
         if (preg_match("/^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/", $domain))
             return $this->queryWhois("whois.lacnic.net", $domain);

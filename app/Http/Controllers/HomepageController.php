@@ -10,25 +10,46 @@ class HomepageController extends Controller
 {
     public function index()
     {
-        $some = new DomainAge();
-        $look = new WhoisLocup();
-
-        // print_r($look->whoislookup('binarywebtools.com'));
-        $whoisinfo = $look->whoislookup('domainagechecker.info');
-
-        $rows = explode("\n", $whoisinfo);
-        $arr = array('info' => "");
-        foreach ($rows as $row) {
-            $posOfFirstColon = strpos($row, ":");
-            if ($posOfFirstColon === FALSE)
-                $arr['info'] .= $row;
-            else
-                $arr[substr($row, 0, $posOfFirstColon)] = trim(substr($row, $posOfFirstColon + 1));
+        $domain = null;
+        if (isset($_GET['domain'])) {
+            $domain = $_GET['domain'];
         }
-        // echo "<pre>";
-        // print_r($arr);
-        // echo "</pre>";
 
-        return view('frontend.homepage', compact('arr'));
+
+        if ($domain) {
+            $domainage = new DomainAge();
+            $look = new WhoisLocup();
+
+            // print_r($look->whoislookup('binarywebtools.com'));
+            $whoisinfo = $look->whoislookup($domain);
+            $age = $domainage->age($domain);
+
+            // return $age;
+
+
+            // return $whoisinfo;
+
+            $rows = explode("\n", $whoisinfo);
+            $arr = array();
+            foreach ($rows as $row) {
+                $posOfFirstColon = strpos($row, ":");
+                // if ($posOfFirstColon === FALSE)
+                //     $arr['info'] .= $row;
+                // else
+                    $arr[substr($row, 0, $posOfFirstColon)] = trim(substr($row, $posOfFirstColon + 1));
+            }
+            // echo "<pre>";
+            // print_r($arr);
+            // echo "</pre>";
+
+            return view('frontend.domain-page', compact('arr', 'age', 'domain'));
+        }else{
+            return view('frontend.homepage');
+        }
+    }
+
+    public function search()
+    {
+        return 'search';
     }
 }
