@@ -27,6 +27,19 @@ p {
 a {
     text-decoration: none;
 }
+.bg-site{
+    background-color: #033DDC !important;
+}
+.color-site{
+    color: #033DDC !important;
+}
+
+input:focus
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
 
 /* header start */
 .navbar-brand img {
@@ -37,7 +50,7 @@ a {
 
 /* breadcrumb start */
 .breadcrumb-area {
-    background-image: url(../images/parallax.jpg);
+    /* background-image: url(../images/mesh-33.png); */
     position: relative;
     background-size: cover;
     background-position: center;
@@ -47,7 +60,7 @@ a {
     height: 300px;
     z-index: 2;
     display: flex;
-    align-items: center;
+    height: 100vh !important;
 }
 
 .breadcrumb-area::after {
@@ -58,7 +71,7 @@ a {
     width: 100%;
     height: 100%;
     content: "";
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     z-index: -1;
 }
 
@@ -337,4 +350,4 @@ a {
     font-size: 15px;
 }
 
-/* blog end */
+/* Input */

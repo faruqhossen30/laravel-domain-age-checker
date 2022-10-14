@@ -61,7 +61,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <span>Copyrights © 2022. All Rights Reserved by ThemeLuxury.</span>
+                <span>Copyrights © 2022. All Rights Reserved by Domain Age Checker.</span>
             </div>
         </div>
     </div>

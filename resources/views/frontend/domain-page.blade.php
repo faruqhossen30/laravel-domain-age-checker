@@ -9,9 +9,17 @@
                     <h1 class="mb-3">Domain Age Checker </h1>
                     {{-- <span>The Best Free Online SEO Tools You Will Ever Need</span> --}}
                     <form action="" method="get">
-                        <div class="input-group mb-3">
+                        {{-- <div class="input-group mb-3">
                             <input type="text" name="domain" @if($domain) value="{{$domain}}" @endif class="form-control form-control-md" placeholder="Enter your domain" aria-label="Recipient's username" aria-describedby="button-addon2">
                             <button class="btn btn-light" type="submir" id="button-addon2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div> --}}
+                        <div class="input-group bg-white p-2 rounded-pill border border-1">
+                            <input type="text" name="domain" class="form-control form-control-md border border-0"
+                                placeholder="Enter your domain" aria-label="Recipient's username"
+                                aria-describedby="button-addon2">
+                            <button class="btn btn-white" type="submir" id="button-addon2">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </div>
