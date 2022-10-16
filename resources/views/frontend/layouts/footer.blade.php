@@ -1,5 +1,5 @@
 <footer>
-    <div class="footer-area py-5">
+    <div class="footer-area py-5 border border-top">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-md-4 col-sm-3">

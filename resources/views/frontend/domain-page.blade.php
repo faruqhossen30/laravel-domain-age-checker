@@ -4,19 +4,35 @@
 <div class="breadcrumb-area text-center">
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 offset-sm-2">
+            <div class="col-sm-8 offset-sm-2 mt-5">
                 <div class="breadcrumb-content">
-                    <h1 class="mb-3">Domain Age Checker </h1>
-                    {{-- <span>The Best Free Online SEO Tools You Will Ever Need</span> --}}
+                    <div class="mb-4">
+                        <h1 class="text-dark text-uppercase text-white">Domain Age Checker </h1>
+                        <small class="text-dark text-white">Super fast domain age checker tools.</small>
+                    </div>
                     <form action="" method="get">
-                        {{-- <div class="input-group mb-3">
+                        <div class="input-group bg-white p-1 px-2 rounded-pill border border-3 border-secondary">
+                            <input type="text" name="domain" @if($domain) value="{{$domain}}" @endif class="form-control form-control-md border border-0"
+                                placeholder="Enter your domain" aria-label="Recipient's username"
+                                aria-describedby="button-addon2" style="outline: none">
+                            <button class="btn btn-white" type="submir" id="button-addon2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                {{-- <div class="breadcrumb-content">
+                    <h1 class="mb-3">Domain Age Checker </h1>
+                    <span>The Best Free Online SEO Tools You Will Ever Need</span>
+                    <form action="" method="get">
+                        <div class="input-group mb-3">
                             <input type="text" name="domain" @if($domain) value="{{$domain}}" @endif class="form-control form-control-md" placeholder="Enter your domain" aria-label="Recipient's username" aria-describedby="button-addon2">
                             <button class="btn btn-light" type="submir" id="button-addon2">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
-                        </div> --}}
+                        </div>
                         <div class="input-group bg-white p-2 rounded-pill border border-1">
-                            <input type="text" name="domain" class="form-control form-control-md border border-0"
+                            <input type="text" name="domain" @if($domain) value="{{$domain}}" @endif class="form-control form-control-md border border-0"
                                 placeholder="Enter your domain" aria-label="Recipient's username"
                                 aria-describedby="button-addon2">
                             <button class="btn btn-white" type="submir" id="button-addon2">
@@ -24,7 +40,7 @@
                             </button>
                         </div>
                     </form>
-                </div>
+                </div> --}}
 
             </div>
         </div>
@@ -87,7 +103,7 @@
 
 
                 <!-- info start -->
-                <div class="info-area">
+                {{-- <div class="info-area">
                     <div class="card">
                         <div class="card-body">
                             <img src="{{asset('frontend')}}/images/728x90.png" class="w-100" alt="">
@@ -146,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <!-- info end -->
 
             </div>
