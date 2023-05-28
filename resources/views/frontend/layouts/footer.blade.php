@@ -61,7 +61,9 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <span>Copyrights © 2022. All Rights Reserved by Domain Age Checker.</span>
+                <span>Copyrights © @php
+                    echo date("Y")
+                @endphp All Rights Reserved by Domain Age Checker.</span>
             </div>
         </div>
     </div>
