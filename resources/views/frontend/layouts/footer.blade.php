@@ -1,63 +1,19 @@
-<footer>
-    <div class="footer-area py-5 border border-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-md-4 col-sm-3">
-                    <div class="footer-widget">
-                        <h5>About Us</h5>
-                        <p>Vestibulum quis risus sed nisl pellentesque aliquet et et lorem.</p>
-                        <p>Fusce nibh nisl, gravida nec ipsum eu, feugiat condimentum velit.</p>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-md-2 col-sm-3">
-                    <div class="footer-widget">
-                        <h6>Features</h6>
-                        <ul class="footer-menu">
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-md-2 col-sm-3">
-                    <div class="footer-widget">
-                        <h6>Support</h6>
-                        <ul class="footer-menu">
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-md-2 col-sm-3">
-                    <div class="footer-widget">
-                        <h6>Trending</h6>
-                        <ul class="footer-menu">
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-2 col-sm-3">
-                    <div class="footer-widget">
-                        <h6>Legal</h6>
-                        <ul class="footer-menu">
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">home</a></li>
-                        </ul>
-                    </div>
-                </div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 mb-3">
+            <div class="follow-social text-center">
+                <h3 class="mb-4">Follow us</h3>
+                <a href="#" style="background:#1877F2;"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#" style="background:#1DA1F2;"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" style="background:#E4405F;"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#" style="background:#0A66C2;"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#" style="background:#CD201F;"><i class="fab fa-youtube"></i> Youtube</a>
             </div>
         </div>
     </div>
-</footer>
-<div class="copyright text-center my-4">
+    <hr>
+</div>
+<footer class="copyright text-center my-4">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -67,4 +23,4 @@
             </div>
         </div>
     </div>
-</div>
+</footer>
